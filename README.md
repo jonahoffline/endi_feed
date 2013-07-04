@@ -1,4 +1,4 @@
-LinkShrink [![Build Status](https://travis-ci.org/jonahoffline/endi_feed.png?branch=master)](https://travis-ci.org/jonahoffline/endi_feed) [![Gem Version](https://badge.fury.io/rb/endi_feed.png)](http://badge.fury.io/rb/endi_feed) [![Dependency Status](https://gemnasium.com/jonahoffline/endi_feed.png)](https://gemnasium.com/jonahoffline/endi_feed) [![Code Climate](https://codeclimate.com/github/jonahoffline/endi_feed.png)](https://codeclimate.com/github/jonahoffline/endi_feed)
+EndiFeed [![Build Status](https://travis-ci.org/jonahoffline/endi_feed.png?branch=master)](https://travis-ci.org/jonahoffline/endi_feed) [![Gem Version](https://badge.fury.io/rb/endi_feed.png)](http://badge.fury.io/rb/endi_feed) [![Dependency Status](https://gemnasium.com/jonahoffline/endi_feed.png)](https://gemnasium.com/jonahoffline/endi_feed) [![Code Climate](https://codeclimate.com/github/jonahoffline/endi_feed.png)](https://codeclimate.com/github/jonahoffline/endi_feed)
 =================
 
 Endi is a Ruby Gem and command-line application for getting the latest news from endi.com / El Nuevo Dia Newspaper
