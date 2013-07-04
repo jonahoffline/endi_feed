@@ -28,7 +28,7 @@ describe EndiFeed::News do
 
   describe '.last_update' do
     it 'returns the last update time of the feed' do
-      expect(news.last_update).to eq('12:27:33 PM')
+      expect(news.last_update).to eq('04:27:33 PM')
     end
   end
 
@@ -45,7 +45,7 @@ describe EndiFeed::News do
   describe '.format_header_text' do
     it 'formats the header text' do
       expect(news.format_header_text([]))
-      .to eq(['El Nuevo Dia : Noticias (http://www.elnuevodia.com/)', 'Última actualización: 12:27:33 PM'])
+      .to eq(['El Nuevo Dia : Noticias (http://www.elnuevodia.com/)', 'Última actualización: 04:27:33 PM'])
     end
   end
 end
