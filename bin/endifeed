@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+Signal.trap("INT") { exit 1 }
+
+$LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib/'
+require 'endi_feed'
+require 'endi_feed/cli'
+
+puts EndiFeed::CLI.new(ARGV).parse
