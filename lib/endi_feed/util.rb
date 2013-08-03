@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'uri'
 require 'rss'
 require 'time'
@@ -12,9 +13,10 @@ module EndiFeed
     module_function
 
     # Fetches and parses RSS feed
+    # @param [String] url to parse
     # @return [RSS] parsed XML feed or nil
-    def parse_feed
-      open('http://www.elnuevodia.com/rss/noticias.xml') do |rss|
+    def parse_feed(url = 'http://www.elnuevodia.com/rss/noticias.xml')
+      open(url) do |rss|
         RSS::Parser.parse(rss)
       end
     end
