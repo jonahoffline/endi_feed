@@ -40,6 +40,10 @@ El Nuevo Dia : Noticias (http://www.elnuevodia.com/)
   * -n, --news [total]  - total of news to fetch
   * -h, --help          - show help message
 
+## Todo
+ * Save results to file (html, text)
+ * Select Url API to use in request
+ 
 ## Author
   * [Jonah Ruiz](http://www.pixelhipsters.com)
 
