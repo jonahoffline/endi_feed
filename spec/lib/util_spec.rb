@@ -29,7 +29,7 @@ describe EndiFeed::Util do
   describe '.convert_time' do
     it 'converts HTTP-date into a 12-hour parsed time' do
       expect(util.convert_time('Sat, 29 Jun 2013 16:27:33 GMT'))
-      .to eq('12:27:33 PM')
+      .to eq('04:27:33 PM')
     end
   end
 end
