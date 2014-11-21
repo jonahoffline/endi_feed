@@ -9,9 +9,8 @@ describe EndiFeed do
     .with(:headers => { 'Accept' => '*/*', 'User-Agent' => 'Ruby' })
     .to_return(:status => 200, :body => fixture('noticias.xml'), :headers => {})
 
-    stub_request(:post, 'https://www.googleapis.com/urlshortener/v1/url')
-    .with(:headers => { 'Accept' => '*/*', 'User-Agent' => 'Ruby' })
-    .to_return(:status => 200, :body => 'http://goo.gl/fbsS', :headers => {})
+    stub_request(:post, "https://www.googleapis.com/urlshortener/v1/url")
+      .to_return(:status => 200, :body => "http://goo.gl/fbsS", :headers => {})
   end
 
   describe '.get_news' do

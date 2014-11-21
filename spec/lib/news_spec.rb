@@ -6,12 +6,11 @@ describe EndiFeed::News do
 
   before :each do
     stub_request(:get, 'http://www.elnuevodia.com/rss/noticias.xml')
-    .with(:headers => { 'Accept' => '*/*', 'User-Agent' => 'Ruby' })
-    .to_return(:status => 200, :body => fixture('noticias.xml'), :headers => {})
+      .with(:headers => {'Accept'=>'*/*', 'User-Agent'=>'Ruby'})
+      .to_return(:status => 200, :body => fixture('noticias.xml'), :headers => {})
 
-    stub_request(:post, 'https://www.googleapis.com/urlshortener/v1/url')
-    .with(:headers => { 'Accept' => '*/*', 'User-Agent' => 'Ruby' })
-    .to_return(:status => 200, :body => 'http://goo.gl/fbsS', :headers => {})
+    stub_request(:post, "https://www.googleapis.com/urlshortener/v1/url")
+      .to_return(:status => 200, :body => "http://goo.gl/fbsS", :headers => {})
   end
 
   describe '.title' do
@@ -28,7 +27,7 @@ describe EndiFeed::News do
 
   describe '.last_update' do
     it 'returns the last update time of the feed' do
-      expect(news.last_update).to eq('04:27:33 PM')
+      expect(news.last_update).to eq('09:52:01 AM')
     end
   end
 
@@ -45,7 +44,7 @@ describe EndiFeed::News do
   describe '.format_header_text' do
     it 'formats the header text' do
       expect(news.format_header_text([]))
-      .to eq(['El Nuevo Dia : Noticias (http://www.elnuevodia.com/)', 'Última actualización: 04:27:33 PM'])
+      .to eq(['El Nuevo Dia : Noticias (http://www.elnuevodia.com/)', 'Última actualización: 09:52:01 AM'])
     end
   end
 end
