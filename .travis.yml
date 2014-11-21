@@ -1,10 +1,10 @@
 language: ruby
 sudo: false
+cache: bundler
 rvm:
   - 1.9.3
+  - 2.1.4
 script: 'bundle exec rake test'
-rvm:
-  - 1.9.3
 notifications:
   recipients:
     - jonah@pixelhipsters.com
